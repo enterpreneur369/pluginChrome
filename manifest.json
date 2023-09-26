@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Mi Buscador",
+    "description": "Una extensión para agregar un buscador a la jerarquía de un sitio web del sena.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon16.png"
+      }
+    },
+    "icons": {
+      "16": "images/icon16.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://sena.territorio.la/content_mooc.php?idMateria=3102781*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
